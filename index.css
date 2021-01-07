@@ -3,7 +3,7 @@
 body {
     padding:0px;
     margin:0px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80") center center;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('back.mp4') center center;
     background-size:cover;
     width:100vw;
     height:100vh;
@@ -65,6 +65,16 @@ body {
     color:#fff;
     text-decoration:underline;
 }
+.logo {
+  text-indent: -999999px;
+  background: url('logo.png');
+  height: 149px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: fill;
+  background-repeat: no-repeat;
+}
 #middle {
     width:100vw;
     height:90vh;
@@ -82,6 +92,39 @@ body {
     color:rgb(255, 50, 50);
     font-size:70px;
     text-decoration:underline;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
 }
 #about {
     width:10vw;
@@ -163,7 +206,7 @@ body {
     margin:0px 8px;
     text-align:center;
 }
-.social:hover { 
+.social:hover {
     cursor: pointer;
     color:rgb(255, 50, 50);
 }
@@ -307,20 +350,20 @@ body {
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #fff; 
+    background: #fff;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 50, 50); 
+    background: rgb(255, 50, 50);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 50, 50,0.8); 
+    background: rgba(255, 50, 50,0.8);
 }
 ::selection {
 	color: #fff;
 	background: rgb(255, 50, 50);
 }
 
-@media (max-width: 800px){ 
+@media (max-width: 800px){
     #about {
         display:none;
     }
