@@ -89,10 +89,40 @@ body {
     padding-bottom:10vh;
 }
 #middle h1 {
-    color:rgb(255, 50, 50);
+    color:rgb(255, 255, 255);
     font-size:70px;
-    text-decoration:underline;
+
+
 }
+.hr3 {
+  color: black;
+  font-size:70px;
+}
+
+.hr4 {
+  color: white;
+  font-size:70px;
+}
+.hr5 {
+  color: white;
+  font-size:30px;
+}
+
+.hr6 {
+  color: red;
+  font-size:30px;
+}
+
+.hr7 {
+  color: yellow;
+  font-size:30px;
+}
+
+.hr8 {
+  color: red;
+  font-size:30px;
+}
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -400,5 +430,11 @@ body {
     }
     #box div {
         width:100%;
+    }
+
+    @font-face {
+      font-family: hexs;
+      src: url(323.otf) format("truetype");
+
     }
 }
