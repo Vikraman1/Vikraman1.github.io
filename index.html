@@ -12,6 +12,24 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+
+    // Get the button
+    var btn = document.getElementById("myBtn");
+
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
       function test()
       {
 alert('Hello');      }
@@ -24,6 +42,9 @@ alert('Hello');      }
     <div id="loading">
         <div id="spinner"></div>
     </div>
+    <video autoplay muted loop id="myVideo">
+<source src="back.mp4" type="video/mp4">
+</video><div>
     <div id="particles-js"></div>
     <div id="box">
         <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
@@ -33,28 +54,29 @@ alert('Hello');      }
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
     </div>
-                <video autoplay muted loop id="myVideo">
-  <source src="back.mp4" type="video/mp4">
-</video><div>
     <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
     <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">events</a>
     <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+
         <h1>Middle Media</h1>
-        <h2>Linking Solutions</h2>
+        <h2>The Group</h2>
+      </div>
         <div id="menu">
             <a onclick="showabout()">about</a>
             <a onclick="showwork()">events</a>
             <a onclick="showcontact()">contact</a>
         </div>
 
+
+
         <table>
                 <tr>
                     <td class="animated zoomIn" style="animation-delay:2.2s;"><a  class="social"><i class="fab fa-facebook"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a href='https://twitter.com/thisisvikraman'class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
                     <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a href='https://github.com/Vikraman1' class="social"><i class='fab fa-github' style='font-size:20px'></i></a></td>
-                </tr>
+
+        </tr>
         </table>
     </div>
     <div id="work_container" class="container">
@@ -73,15 +95,11 @@ alert('Hello');      }
             <section>
                 <h2>about us</h2>
                 <p>
-                Middle media is a ONE STOP COMPANY for all your media related needs! 
-Our company's verticals include  conducting events of different genres, celebrity contacts, platform for showcasing music, filming and recording the works do reach out to us and we will execute the works. 
-                    Keep in mind MIDDLE MEDIA is the place to go to, our motto is "YOUR WISH IS OUR COMMAND"!  </p>
-<p> Look no further, contact us at MIDDLE MEDIA, our doors are always OPEN!  
-We are rearing to go to make a valuable difference in the media field.
+                We're the biggest group in chennai for Parties blah blah blah
                 </p>
 
             </section>
-          
+
         </div>
           <div id="contact_container" class="container">
             <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
